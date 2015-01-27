@@ -2,8 +2,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 /**
- * @author dschwenk
  * Klasse realisiert das Panel fuer Start- und Stop-Button
+ * @author Daniel Schwenk
  */
 public class SouthPanel extends JPanel {
 
@@ -11,6 +11,7 @@ public class SouthPanel extends JPanel {
 	private JButton start;
 	private JButton stop;	
 	
+	// Konstruktor
 	public SouthPanel(Hauptfenster hauptfenster){
 		this.hauptfenster = hauptfenster;
 		

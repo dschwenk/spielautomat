@@ -8,8 +8,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
- * @author dschwenk
  * Klasse realisiert das Panel fuer die Anzeige der 4 Ziffern
+ * @author Daniel Schwenk
  */
 public class CenterPanel extends JPanel{
 

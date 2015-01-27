@@ -7,8 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 /**
- * @author dschwenk
  * Klasse realisiert das Panel mit der Anzeige fuer Guthaben und Gewinn
+ * @author Daniel Schwenk
  */
 public class NorthPanel extends JPanel {
 

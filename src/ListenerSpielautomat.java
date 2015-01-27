@@ -1,8 +1,12 @@
 import model.spielautomatEvent;
 import model.spielautomatListener;
 
-
-public class ListenerSpielautomat implements spielautomatListener{
+/**
+ * Klasse realisiert den Listener fuer Events die durch das Aendern des Models entstehen - implementiert
+ * das Interface <code>spielautomatListener</code>. 
+ * @author Daniel Schwenk
+ */
+public class ListenerSpielautomat implements spielautomatListener {
 
 	private Hauptfenster hauptfenster;
 	
@@ -12,11 +16,21 @@ public class ListenerSpielautomat implements spielautomatListener{
 	}
 
 
+	/**
+	 * Eventhandler fuer das Event <code>ModelChanged</code>.
+	 * Bei Veraenderungen am Model werden die Ziffern aktualisiert
+	 * @param e Ereignis vom Typ <code>spielautomatEvent</code>
+	 */	
 	public void ModelChanged(spielautomatEvent e) {
 		this.hauptfenster.getCenterPanel().setZiffern(e.getZiffern());		
 	}
 
 	
+	/**
+	 * Eventhandler fuer das Event <code>StatusChanged</code>.
+	 * Bei Veraenderungen des Status wird der Gewinn und das Guthaben aktualisiert
+	 * @param e Ereignis vom Typ <code>spielautomatEvent</code>
+	 */		
 	public void StatusChanged(spielautomatEvent e) {
 		
 		// Textfelder aktualisieren

@@ -5,8 +5,8 @@ import javax.swing.JFrame;
 import model.spielautomat;
 
 /**
- * @author dschwenk
  * Klasse realisiert das Hauptfenster, enthaelt main
+ * @author Daniel Schwenk
  */
 public class Hauptfenster extends JFrame {
 
